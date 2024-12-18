@@ -17,4 +17,4 @@ COPY . .
 EXPOSE 7860
 
 # Run the app when the container starts
-CMD ["python", "rag_gui.py"]
+CMD ["python", "rag_gui_mongo.ipynb"]
