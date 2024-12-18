@@ -1,0 +1,15 @@
+version: "3.9"
+
+services:
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: rag_app
+    ports:
+      - "7860:7860"  # Expose Gradio on localhost:7860
+    environment:
+      - MONGO_URI=mongodb+srv://raguser:changeme@cluster0.xcjpc.mongodb.net/rag_db?retryWrites=true&w=majority
+      - MODEL_NAME=llama3.2
+    volumes:
+      - ./chroma_db:/app/chroma_db

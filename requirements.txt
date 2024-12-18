@@ -1,0 +1,8 @@
+gradio
+PyPDF2
+bs4
+requests
+langchain
+sentence-transformers
+chromadb
+pymongo[srv]
