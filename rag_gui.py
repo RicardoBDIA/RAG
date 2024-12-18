@@ -164,7 +164,7 @@ with gr.Blocks() as app:
             )
 
 # Mongodb
-mongo_uri = "mongodb+srv://<raguser>:<changeme>@cluster0.xcjpc.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0"
+mongo_uri = "mongodb+srv://<username>:<password>@mycluster.xcjpc.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0"
 
 # Conexión al cliente
 client = MongoClient(mongo_uri)
