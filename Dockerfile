@@ -10,11 +10,6 @@ COPY requirements.txt .
 # Install Python dependencies
 RUN pip install --no-cache-dir -r requirements.txt
 
-# Install Ollama CLI
-RUN apt-get update && apt-get install -y wget && \
-    wget https://ollama.com/download/latest/linux -O /ollama-cli && \
-    chmod +x /ollama-cli && mv /ollama-cli /usr/local/bin/ollama
-
 # Copy the application code
 COPY . .
 
